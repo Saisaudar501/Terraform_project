@@ -53,4 +53,5 @@ resource "aws_instance" "pub_instance" {
     tags = {
       Name="myec2"
     }
+    subnet_id = aws_subnet.sub1.id
 }
