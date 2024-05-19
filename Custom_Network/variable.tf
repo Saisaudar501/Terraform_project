@@ -1,14 +1,15 @@
+# declaring the variables and their type
 variable "ami_id" {
-    type = string
-    default = ""
+  type    = string
+  default = ""
 }
 
 variable "inst_type" {
-    type = string
-    default = ""
+  type    = string
+  default = ""
 }
 
 variable "keypair" {
-    type = string
-    default = ""
+  type    = string
+  default = ""
 }
