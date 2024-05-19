@@ -45,3 +45,12 @@ resource "aws_route_table_association" "rta" {
     route_table_id = aws_route_table.rt1.id
   
 }
+
+resource "aws_instance" "pub_instance" {
+    ami = var.ami_id
+    instance_type = var.inst_type
+    key_name = var.keypair
+    tags = {
+      Name="myec2"
+    }
+}
