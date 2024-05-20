@@ -60,7 +60,7 @@ resource "aws_security_group" "sg" {
   vpc_id      = aws_vpc.myvpc.id
 
   tags = {
-    Name = "my_sg"
+    Name = "my_sg1"
   }
 
   ingress {
