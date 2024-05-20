@@ -61,5 +61,7 @@ terraform {
     bucket = "statefilestore"   # storing the file in the statefilestore bucket
     key    = "StateFile/terraform.tfstate"   # In the bucket inside the StateFile folder storing the state file
     region = "us-east-1"          # Region of the bucket
+    dynamodb_table = "statefilelock" # applying dynamo DB lock
+    encrypt = true  # ensures state is encrypted at rest in S3
   }
 }
