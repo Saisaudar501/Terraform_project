@@ -32,7 +32,7 @@ resource "aws_route_table" "rt1" {
     gateway_id = aws_internet_gateway.ig1.id
   }
   tags = {
-    Name = "custom_rt"
+    Name = "custom_rt1"
   }
 }
 
