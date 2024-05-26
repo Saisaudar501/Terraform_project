@@ -1,6 +1,3 @@
-provider "aws" {
-  region = "us-west-1"
-}
 resource "aws_instance" "ins_first" {
   ami           = var.ami_id 
   instance_type = var.inst_type
